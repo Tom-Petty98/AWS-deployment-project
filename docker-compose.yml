@@ -1,0 +1,29 @@
+version: "3.3"
+services:
+  nginx:
+    image: jasonsinclair95/group-project:nginx
+    ports:
+      - 80:80
+    container_name: nginx
+
+  backend:
+    image: jasonsinclair95/coolgroup:backend
+    build: ./spring-petclinic-rest
+    ports:
+      - 9966:9966
+    container_name: backend
+  
+  frontend:
+    image: jasonsinclair95/goup3:frontend
+    build: ./spring-petclinic-angular
+    depends_on:
+      - backend
+    ports:
+      - 4200:4200
+    container_name: frontend
+  
+  
+
+  
+    
+    
