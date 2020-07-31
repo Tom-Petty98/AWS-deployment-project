@@ -1,4 +1,5 @@
 # Final-Project-Team3
+This branch has the state of the project completed as part of the final team project at QA. The original repo for my team can be found at https://github.com/BlakeLewis1/final-project 
 
 ## Pet-Clinic Web Application
 ### Contents
